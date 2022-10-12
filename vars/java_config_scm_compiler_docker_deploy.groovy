@@ -1,5 +1,5 @@
 def call(Closure body) {
-    def nodeName = "master"
+    def nodeName = "Built-In Node"
     if ("a" != "a") {
         nodeName = "slave"
     }
