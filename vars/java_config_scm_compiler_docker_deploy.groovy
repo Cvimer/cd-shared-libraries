@@ -1,10 +1,10 @@
 def call(Closure body) {
-    def nodeName = "Built-In Node"
+    def nodeName = "master"
     if ("a" != "a") {
         nodeName = "slave"
     }
     node(nodeName) {
-        stage('Build') {
+        stage('Config') {
             echo 'Building....'
         }
         stage('Test') {
