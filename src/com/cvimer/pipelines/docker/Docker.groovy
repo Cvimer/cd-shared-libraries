@@ -1,6 +1,6 @@
 package com.cvimer.pipelines.docker
 
-def build() {
+def buildDockerImage() {
     stage('Docker') {
         echo 'Docker....'
     }
