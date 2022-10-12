@@ -6,11 +6,11 @@ import com.cvimer.pipelines.deploy.Deploy
 
 
 def call(Closure body) {
-    def nodeName = "master"
-    if ("a" != "a") {
-        nodeName = "slave"
-    }
-    node(nodeName) {
+//    def nodeName = "master"
+//    if ("a" != "a") {
+//        nodeName = "slave"
+//    }
+    node() {
         config()
         scm()
         compiler()
