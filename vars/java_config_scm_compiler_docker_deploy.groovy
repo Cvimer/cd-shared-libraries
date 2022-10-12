@@ -1,18 +1,21 @@
+import com.cvimer.pipelines.config.Config
+import com.cvimer.pipelines.scm.Scm
+import com.cvimer.pipelines.compiler.Compiler
+import com.cvimer.pipelines.docker.Docker
+import com.cvimer.pipelines.deploy.Deploy
+
+
 def call(Closure body) {
     def nodeName = "master"
     if ("a" != "a") {
         nodeName = "slave"
     }
     node(nodeName) {
-        stage('Config') {
-            echo 'Building....'
-        }
-        stage('Test') {
-            echo 'Testing....'
-        }
-        stage('Deploy') {
-            echo 'Deploying....'
-        }
+        config()
+        scm()
+        compiler()
+        docker()
+        deploy()
     }
 
 }
