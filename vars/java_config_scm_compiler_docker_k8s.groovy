@@ -1,4 +1,5 @@
-def java_config_scm_compiler_docker_k8s() {
+def call(Closure body) {
+
     node {
         stage('Build') {
             echo 'Building....'
@@ -10,4 +11,5 @@ def java_config_scm_compiler_docker_k8s() {
             echo 'Deploying....'
         }
     }
+
 }
