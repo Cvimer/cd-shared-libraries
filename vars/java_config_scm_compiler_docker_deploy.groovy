@@ -1,6 +1,9 @@
 def call(Closure body) {
-
-    node {
+    def nodeName = "master"
+    if ("a" != "a") {
+        nodeName = "slave"
+    }
+    node(nodeName) {
         stage('Build') {
             echo 'Building....'
         }

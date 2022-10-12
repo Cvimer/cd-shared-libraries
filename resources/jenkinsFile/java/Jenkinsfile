@@ -1,3 +1,3 @@
 @Library("cd-shared-libraries") _
 
-java_config_scm_compiler_docker_k8s()
+java_config_scm_compiler_docker_deploy()
